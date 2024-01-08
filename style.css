@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Salsa&display=swap');
+
+.btn-primary {
+    background-color: #007bff;
+    /* Primary button color */
+    border: none;
+    font-size: 1.2rem;
+    /* Increased font size */
+    padding: 15px 30px;
+    /* Increased padding for a larger button */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    /* Box shadow on hover */
+}
+
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+    /* Adjust the spacing between navigation items */
+}
+
+.navbar-nav .nav-item a {
+    position: relative;
+    color: #495057;
+    /* Dark text color */
+    font-weight: bold;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #007bff;
+    /* Hover text color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Box shadow on hover */
+}
+
+.navbar-nav .nav-item a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    background-color: #007bff;
+    /* Glowing effect color */
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-item a:hover::before {
+    opacity: 1;
+    transform: scaleX(1.2);
+    /* Adjust the glowing effect size */
+}
+
+
+.client-showcase {
+    overflow: hidden;
+}
+
+.client-list {
+    display: flex;
+    animation: scrollClients 20s linear infinite;
+}
+
+.client-item {
+    flex: 0 0 auto;
+    margin-right: 50px;
+    /* Adjust the space between client items */
+}
+
+@keyframes scrollClients {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.about-me-card {
+    /* max-width: 400px; */
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.about-me-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    animation: changeText 15s infinite;
+    /* Adjust the animation duration */
+}
+
+@keyframes changeText {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        opacity: 0;
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #FFEBEE
+}
+
+.card {
+    width: 400px;
+    background-color: #fff;
+    border: none;
+    border-radius: 12px
+}
+
+label.radio {
+    cursor: pointer;
+    width: 100%
+}
+
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label.radio span {
+    padding: 7px 14px;
+    border: 2px solid #eee;
+    display: inline-block;
+    color: #039be5;
+    border-radius: 10px;
+    width: 100%;
+    height: 48px;
+    line-height: 27px
+}
+
+label.radio input:checked+span {
+    border-color: #039BE5;
+    background-color: #81D4FA;
+    color: #fff;
+    border-radius: 9px;
+    height: 48px;
+    line-height: 27px
+}
+
+.form-control {
+    margin-top: 10px;
+    height: 48px;
+    border: 2px solid #eee;
+    border-radius: 10px
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #039BE5
+}
+
+.agree-text {
+    font-size: 12px
+}
+
+.terms {
+    font-size: 12px;
+    text-decoration: none;
+    color: #039BE5
+}
+
+.confirm-button {
+    height: 50px;
+    border-radius: 10px
+}
+.textset{
+    color: #81D4FA !important;
+}
+.textset:hover{
+    color: #8f6123 !important;
+}
+
+.footer {
+    background-color: #343a40; /* Dark gray footer background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%; }
